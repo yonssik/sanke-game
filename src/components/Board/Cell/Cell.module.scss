@@ -1,0 +1,14 @@
+.cell {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    outline: 1px solid aqua;
+}
+
+.snakeCell {
+    background-color: grey;
+}
+
+.foodCell {
+    background-color: red;
+}

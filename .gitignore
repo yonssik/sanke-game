@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# help files
+goal.txt
+
 # testing
 /coverage
 
