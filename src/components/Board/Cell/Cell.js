@@ -1,15 +1,14 @@
 import styles from './Cell.module.scss';
 
-const cell = ({ key, isSnakeCell, isFoodCell }) => {
+const cell = ({ key, isSnakeCell, isFoodCell, children }) => {
     let cellStyles = styles.cell;
 
     if(isSnakeCell || isFoodCell) {
         cellStyles = `${cellStyles} ${isSnakeCell ? styles.snakeCell : styles.foodCell}`;
-        console.log(cellStyles);
     }
 
     return (
-        <div key={key} className={cellStyles}></div>
+        <div key={key} className={cellStyles}>{children}</div>
     );
 }
 
